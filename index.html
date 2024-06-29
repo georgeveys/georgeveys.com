@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>George Veys</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/icons/favicon-16x16.png" />
+    <link rel="manifest" href="dist/icons/site.webmanifest" />
+    <link rel="mask-icon" href="dist/icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/gvStyle.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image" src="dist/images/logo.png" alt="Logo" />
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center text-light">
+                <div class="hero-bg"></div>
+                <div class="hero-particles-container">
+                    <canvas id="hero-particles"></canvas>
+                </div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <div class="hero-copy fade-in">
+                            <h1 class="hero-title mt-0">George Veys</h1>
+                            <p class="hero-paragraph">
+                                sound engineer <br />
+                                digital solution architecture <br />
+                                project management <br /> <br />
+                                a proud member of the <a href="https://dbsolutions.com" target="_blank">d&b
+                                    solutions</a> team <br />
+                            </p>
+                            <div class="hero-cta">
+                                <a class="button button-primary button-wide-mobile" target="_blank"
+                                    href="mailto:hello@georgeveys.com">Get in touch!</a>
+                            </div>
+                            <p class="hero-paragraph final-email">
+                                <a href="mailto:hello@georgeveys.com">hello@georgeveys.com</a>
+                            </p>
+                        </div>
+                        <div class="mockup-container">
+                            <div class="mockup-bg">
+                                <img src="dist/images/iphone-hero-bg.svg" />
+                            </div>
+                            <img class="device-mockup" src="dist/images/GV-cutout.png"/>
+
+                            <video muted class="device-mockup" id="video_signature" style="max-width: 80%;">
+                                <source src="/dist/video/GV-Sept-22-orange_small.mov" type="video/quicktime" />
+                                <source src="/dist/video/GV-Sept-22-orange_small.webm" type="video/webm" />
+                            </video>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-particles-container">
+                <canvas id="footer-particles"></canvas>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+    <script>
+    var video = document.getElementById("video_signature");
+    video.addEventListener("canplay", function() {
+        setTimeout(function() {
+            video.play();
+        }, 3000);
+    });
+    </script>
+</body>
+
+</html>
